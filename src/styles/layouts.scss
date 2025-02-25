@@ -1,0 +1,9 @@
+@use '@/styles/mixins' as *;
+
+.layout-center {
+  @include layout-position(center, center, center);
+}
+
+.layout-left-center {
+  @include layout-position(left, center, center);
+}

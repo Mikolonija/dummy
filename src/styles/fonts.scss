@@ -1,0 +1,17 @@
+@use '@/styles/mixins' as *;
+
+.font-poppins-regular-16 {
+  @include font('Poppins', 16px, 400);
+}
+
+.font-poppins-medium-24 {
+  @include font('Poppins', 24px, 500);
+}
+
+.font-lato-bold-16 {
+  @include font('Lato', 16px, 600);
+}
+
+.font-poppins-light-16 {
+  @include font('Poppins', 16px, 300);
+}

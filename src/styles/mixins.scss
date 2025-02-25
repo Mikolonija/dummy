@@ -1,0 +1,26 @@
+@use '@/styles/variables' as *;
+
+@mixin media-query($breakpoint) {
+  @if ($breakpoint==phone) {
+    @media (max-width: $breakpoint-phone) {
+      @content;
+    }
+  } @else if($breakpoint==laptop) {
+    @media (max-width: $breakpoint-laptop) {
+      @content;
+    }
+  }
+}
+
+@mixin layout-position($justify: center, $align: center, $textAlign: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  text-align: $textAlign;
+}
+
+@mixin font($fontName, $size, $weight: 400) {
+  font-family: $fontName, sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+}
