@@ -15,6 +15,6 @@ describe('#FetchData', () => {
     const invalidUrl = 'https://dummyjson.com/dssdaasd';
     await fetchData(invalidUrl, { method: 'GET' });
     expect(loading.value).toBe(false);
-    expect(error.value).toBe(error.value);
+    expect(error.value).not.toBe(null);
   });
 });
